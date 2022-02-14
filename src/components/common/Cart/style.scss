@@ -1,0 +1,15 @@
+.cart-icon {
+  &-circle {
+    border-radius: 50%;
+    background-color: #f9a109;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+  }
+  &-main {
+    color: #ffffff;
+  }
+}
