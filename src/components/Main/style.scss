@@ -1,11 +1,9 @@
-.navbar {
-  background-color: #ffffff;
-}
-
-.main {
-  background-color: #fafafe;
-}
-
-.shoppingList {
-  background-color: #fff0de;
+.shoppingify-text {
+  &-main {
+    font-weight: 500;
+    font-size: 26px;
+  }
+  &-name {
+    color: #f9a109;
+  }
 }

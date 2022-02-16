@@ -1,23 +1,21 @@
-import { Box, Flex, Grid, GridItem, Stack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import "./style.scss";
-interface Props {}
+import strings from "../../localization";
 
-const Main = (props: Props) => {
+export default function Main() {
   return (
-    <Stack direction={["row"]} minH="100vh">
-      <Flex flex={1} className="navbar" maxW={"65px"}>
-        <Navbar />
+    <>
+      <Flex justifyContent={"space-around"} flex={2} width="full">
+        <Flex className="shoppingify-text-main" flex={6}>
+          <p>
+            <span className="shoppingify-text-name">{strings.shoppingify} </span>
+            {strings.shoppingifyInfo}
+          </p>
+        </Flex>
+        <Flex flex={6}>{/* <input />  */}</Flex>
       </Flex>
-      <Flex flex={7} className="main">
-        2
-      </Flex>
-      <Flex flex={4} className="shoppingList">
-        3
-      </Flex>
-    </Stack>
+      <Flex flex={10}>n</Flex>
+    </>
   );
-};
-
-export default Main;
+}

@@ -1,8 +1,7 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import Main from "./components/Main/Main";
+import Main from "./components/MainContainer/MainContainer";
 
 function App() {
   return (
