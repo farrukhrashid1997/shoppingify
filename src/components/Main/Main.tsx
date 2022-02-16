@@ -7,10 +7,10 @@ interface Props {}
 const Main = (props: Props) => {
   return (
     <Stack direction={["row"]} minH="100vh">
-      <Flex flex={2} className="navbar">
+      <Flex flex={1} className="navbar" maxW={"65px"}>
         <Navbar />
       </Flex>
-      <Flex flex={6} className="main">
+      <Flex flex={7} className="main">
         2
       </Flex>
       <Flex flex={4} className="shoppingList">

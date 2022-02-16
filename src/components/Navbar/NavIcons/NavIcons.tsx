@@ -1,5 +1,6 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Tooltip } from "@chakra-ui/react";
 import React, { useState } from "react";
+import strings from "../../../localization";
 import "./style.scss";
 
 export default function NavIcons() {
@@ -12,10 +13,12 @@ export default function NavIcons() {
   return (
     <>
       {mainIcons.map((i, index) => (
-        <Flex flexDirection={"row"} onClick={() => setActive(index)}>
-          <div className={`nav-icons-div${active === index ? "-active" : ""}`} />
-          <span className={`material-icons-outlined nav-icons`}>{i.iconName}</span>
-        </Flex>
+        <Tooltip hasArrow label={strings.items} placement="right">
+          <Flex flexDirection={"row"} onClick={() => setActive(index)}>
+            <div className={`nav-icons-div${active === index ? "-active" : ""}`} />
+            <span className={`material-icons-outlined nav-icons`}>{i.iconName}</span>
+          </Flex>
+        </Tooltip>
       ))}
     </>
   );
