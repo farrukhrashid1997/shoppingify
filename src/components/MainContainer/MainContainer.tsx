@@ -15,7 +15,7 @@ const MainContainer = (props: Props) => {
       <Flex flex={8} className="main" px={14} alignItems="center" flexDirection={"column"}>
         <Main />
       </Flex>
-      <Flex flex={3} className="shopping-list" flexDirection={"column"}>
+      <Flex flex={3} className="shopping-list" flexDirection={"column"} alignItems="center">
         <ShoppingList />
       </Flex>
     </Stack>

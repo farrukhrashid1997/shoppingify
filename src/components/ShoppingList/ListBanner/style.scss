@@ -1,10 +1,12 @@
 .list-banner {
   &-container {
     background-color: #80485b;
-    margin: 2rem 2.5rem;
+    margin-top: 2rem;
     border-radius: 24px;
   }
   &-drink-icon {
+    position: relative;
+    bottom: 20px;
   }
   &-text {
     font-family: Quicksand;
