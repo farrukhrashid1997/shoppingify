@@ -10,9 +10,9 @@ export default function CategoryItems({ categoryTitle, items }: ICategoryItems) 
       <Flex className="category-items-title" pb={4} flex={1}>
         {categoryTitle}
       </Flex>
-      <Flex>
+      <Flex flex={11}>
         {items.map((item) => (
-          <ItemBox text={item.name} />
+          <ItemBox text={item.name} flex={3} />
         ))}
       </Flex>
     </Flex>
