@@ -1,13 +1,16 @@
 .list-banner {
   &-container {
-    // position: relative;
     background-color: #80485b;
     margin: 2rem 2.5rem;
     border-radius: 24px;
   }
   &-drink-icon {
-    // position: absolute;
-    // bottom: 3px;
-    // left: 7px;
+  }
+  &-text {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
   }
 }

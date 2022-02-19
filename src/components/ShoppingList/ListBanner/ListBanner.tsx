@@ -1,6 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { ReactComponent as DrinkIcon } from "../../../assets/icons/drink.svg";
+import strings from "../../../localization";
 import "./style.scss";
 
 export default function ListBanner() {
@@ -10,7 +11,7 @@ export default function ListBanner() {
         <DrinkIcon />
       </Flex>
       <Flex flex={8} flexDirection="column">
-        <div>Didnt find what you need?</div>
+        <div className="list-banner-text">{strings.didntFind}</div>
         <div>asdasd</div>
       </Flex>
     </Flex>

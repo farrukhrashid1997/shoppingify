@@ -1,6 +1,5 @@
 import { Flex, Stack } from "@chakra-ui/react";
 import React from "react";
-import AddItem from "../AddItem";
 import Main from "../Main";
 import Navbar from "../Navbar/Navbar";
 import ShoppingList from "../ShoppingList";
