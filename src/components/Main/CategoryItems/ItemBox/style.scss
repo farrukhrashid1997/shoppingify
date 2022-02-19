@@ -1,0 +1,12 @@
+.item-box {
+  &-main {
+    box-shadow: 0px 2px 12px 0px #0000000d;
+    border-radius: 12px;
+    padding: 12px;
+    min-width: 150px;
+  }
+  &-icon {
+    cursor: pointer;
+    color: #c1c1c4;
+  }
+}
